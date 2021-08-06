@@ -1,0 +1,26 @@
+{
+  "name": "eventful-wss",
+  "version": "0.1.3",
+  "description": "An event-driven web socket library for Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "event",
+    "websocket",
+    "ws",
+    "node",
+    "react"
+  ],
+  "author": "Santeri Sydänmetsä <santeri.sydanmetsa@protonmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.0.0"
+  },
+  "homepage": "https://github.com/santerijps/eventful-wss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santerijps/eventful-wss.git"
+  }
+}
