@@ -1,7 +1,7 @@
 // Server-side Eventful WebSockets
 
 
-const { WebSocket, WebSocketServer } = require("ws")
+const WebSocket = require("ws")
 const { parse } = require("url")
 
 
@@ -74,7 +74,7 @@ class EventfulWebSocketServer {
     }
 
     init() {
-        this.socket = new WebSocketServer({ noServer: true })
+        this.socket = new WebSocket.Server({ noServer: true })
 
         this.socket.on("connection", (websocket, request) => {
 
