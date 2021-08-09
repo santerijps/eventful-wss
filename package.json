@@ -1,6 +1,6 @@
 {
   "name": "eventful-wss",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "An event-driven web socket library for Node.",
   "main": "index.js",
   "scripts": {
