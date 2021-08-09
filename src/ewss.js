@@ -13,11 +13,10 @@ function buildEWSMessage(event, data) {
 function parseEWSMessage(message) {
 
     try {
-        const json = JSON.parse(message)
-        return { ok: true, body: json }
+        return { ok: true, body: JSON.parse(message) }
     }
 
-    finally {
+    catch {
         return { ok: false, body: null }
     }
 }

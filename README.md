@@ -47,7 +47,7 @@ const chatServer = new EventfulWebSocketServer()
     })
 
     // Client connection is closed
-    .onClose((websocket, req) => {
+    .onClose(websocket => {
         console.log("A client disconnected...")
     })
 
