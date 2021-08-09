@@ -12,10 +12,8 @@ function buildEWSMessage(event, data) {
 
 function parseEWSMessage(message) {
 
-    let json
-
     try {
-        json = JSON.parse(message)
+        const json = JSON.parse(message)
         return { ok: true, body: json }
     }
 
@@ -138,7 +136,7 @@ class EventfulWebSocketServer {
      * @returns EventfulWebSocketServer
      */
     subscribe(event, handler) {
-        if ( !(event in this.events) )
+        if ( !(event in this._events) )
             this._events[event] = []
         this._events[event].push(handler)
         return this

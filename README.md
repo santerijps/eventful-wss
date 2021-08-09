@@ -1,5 +1,5 @@
-# eventful-ws
-An event-driven web socket library for Node, `eventful-ws` is an easy way to setup websockets in your front-end and back-end applications.
+# eventful-wss
+An event-driven WebSocket library for Node, `eventful-ws` is an easy way to setup websockets in your front-end and back-end applications.
 
 ## Building a simple chat server with Next.js
 In your Node server application, call the `addEventfulWebSocketHandlers` function to register WebSocket end points. In the code below we are registering the `/chat` URL path with out imported `ChatServer`.
