@@ -172,8 +172,8 @@ class EventfulWebSocketServer {
                 this._onMessageHandler && this._onMessageHandler(websocket, message, isBinary)
                 const json = parseEWSMessage(message)
                 if (json.ok) {
-                    for (const subscription of this._events[json.event] || []) {
-                        subscription(websocket, json.data, isBinary)
+                    for (const subscription of this._events[json.body.event] || []) {
+                        subscription(websocket, json.body.data, isBinary)
                     }
                 }
             })
